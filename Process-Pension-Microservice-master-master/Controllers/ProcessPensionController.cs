@@ -1,18 +1,10 @@
 ﻿using System;
-using System.Net;
-using System.Net.Http;
-using System.Text;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using ProcessPension.Provider;
 using ProcessPension.Repository;
 
 namespace ProcessPension.Controllers
 {
-    
+
     [Route("api/[controller]")]
     [ApiController]
     public class ProcessPensionController : ControllerBase
@@ -30,9 +22,8 @@ namespace ProcessPension.Controllers
         }
 
         /// <summary>
-        /// 1. This method is taking values given by MVC Client i.e. Pension Management Portal as Parameter
+        /// 1. This method is taking values given by Angular Application  i.e. Pension Management Portal as Parameter
         /// 2. Calling the Pension Detail Microservice and checking all the values
-        /// 3. Calling the Pension Disbursement Microservice to get the Status Code
         /// </summary>
         /// <param name="processPensionInput"></param>
         /// <returns>Details to be displayed on the MVC Client</returns>
@@ -107,7 +98,7 @@ namespace ProcessPension.Controllers
             }
 
             return Ok(Client);
-            //return OkObjectResult(Client);
+
 
            
         }

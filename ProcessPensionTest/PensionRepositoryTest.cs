@@ -1,13 +1,10 @@
 ﻿using Moq;
 using NUnit.Framework;
 using ProcessPension;
-using ProcessPension.Provider;
 using ProcessPension.Repository;
 using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 
 namespace ProcessPensionTest
 {

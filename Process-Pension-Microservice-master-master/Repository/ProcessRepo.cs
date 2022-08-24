@@ -1,10 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using ProcessPension.Provider;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
+﻿using ProcessPension.Provider;
 
 namespace ProcessPension.Repository
 {
