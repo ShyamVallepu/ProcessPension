@@ -22,7 +22,7 @@ namespace ProcessPension.Provider
             PensionProvider banktype = new PensionProvider();
             
             HttpResponseMessage response = new HttpResponseMessage();
-            string uriConn = "https://pensiondetaildup.azurewebsites.net";
+            string uriConn = "http://20.124.143.230/";
 
             using (var client = new HttpClient())
             {
