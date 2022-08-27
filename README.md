@@ -1,5 +1,5 @@
 ##  Process Pension Service
-* It takes in the pensioner detail like the name, aadhaar number
+* It takes input only aadhaar number
 * Verifies if the pensioner detail is accurate by getting the data from PensionerDetail Microservice or not. 
 * If not, validation message `“Invalid pensioner detail provided, please provide valid detail.”`
 * If valid, then pension calculation is done and the Process Pension Output  is returned to the Web application to be displayed on the UI.
